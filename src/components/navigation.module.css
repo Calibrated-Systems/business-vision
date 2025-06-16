@@ -1,0 +1,136 @@
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.collapsed {
+  width: 60px;
+}
+
+.expanded {
+  width: 240px;
+}
+
+.navMenu {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.navItem {
+  margin: 0;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border-left: 3px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecf0f1;
+  border-left-color: #3498db;
+}
+
+.navLink.active {
+  background: rgba(52, 152, 219, 0.2);
+  color: #3498db;
+  border-left-color: #3498db;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 1.25rem;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.linkText {
+  margin-left: 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.collapsed .linkText {
+  opacity: 0;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .nav {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .collapsed,
+  .expanded {
+    width: 100%;
+  }
+  
+  .navMenu {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    height: auto;
+  }
+  
+  .navItem {
+    flex: 1;
+  }
+  
+  .navLink {
+    flex-direction: column;
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+    border-left: none;
+    border-top: 3px solid transparent;
+  }
+  
+  .navLink:hover,
+  .navLink.active {
+    border-left: none;
+    border-top-color: #3498db;
+  }
+  
+  .icon {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .linkText {
+    margin-left: 0;
+    font-size: 0.7rem;
+    opacity: 1;
+  }
+  
+  .collapsed .linkText {
+    opacity: 1;
+  }
+}

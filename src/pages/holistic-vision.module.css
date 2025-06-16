@@ -1,0 +1,568 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.backLink {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #2980b9;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
+
+.introduction {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  border-left: 4px solid #e74c3c;
+}
+
+.introText {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.introText:last-child {
+  margin-bottom: 0;
+}
+
+.visionTypesContainer {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.visionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .visionGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.visionCard {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #e1e5e9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.visionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.selectedCard {
+  border-width: 3px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.visionIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.visionTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.visionSubtitle {
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cardContent {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.visionDescription {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.expandedContent {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e1e5e9;
+}
+
+.detailSection {
+  margin-bottom: 1.5rem;
+}
+
+.detailTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.detailList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.detailList li {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.languageText {
+  color: #555;
+  margin: 0;
+  font-style: italic;
+}
+
+.buyingExperiencesList {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.experienceItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.experienceItem:last-child {
+  margin-bottom: 0;
+}
+
+.experienceLabel {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.experienceText {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.cardActions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.actionHint {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.whyBothMatter {
+  margin-bottom: 4rem;
+}
+
+.matterGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .matterGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.matterCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 2px solid;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.matterCard h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.matterCard p {
+  color: #555;
+  margin: 0;
+}
+
+.affinityTrapSection {
+  margin-bottom: 4rem;
+}
+
+.trapIntro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.trapText {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trapButton {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.trapButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.3);
+}
+
+.affinityContent {
+  background: #fefefe;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid #e1e5e9;
+}
+
+.affinityIntro {
+  color: #555;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.scenarioGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scenarioCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 2px solid;
+  transition: transform 0.2s ease;
+}
+
+.scenarioCard:hover {
+  transform: translateY(-2px);
+}
+
+.scenarioHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.scenarioIcon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.scenarioTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.scenarioDescription {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.scenarioExamples h5 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.scenarioExamples ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.scenarioExamples li {
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.trapSolution {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.solutionTitle {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.solutionText {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.partnershipTypes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .partnershipTypes {
+    grid-template-columns: 1fr;
+  }
+}
+
+.partnershipCard {
+  background: white;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+.partnershipCard h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.partnershipCard p {
+  color: #555;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.integrationSection {
+  margin-bottom: 4rem;
+}
+
+.integrationIntro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.integrationFlow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.integrationStep {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.stepNumber {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  margin-right: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stepContent {
+  flex: 1;
+}
+
+.stepTitle {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stepDescription {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.flowArrow {
+  font-size: 1.5rem;
+  color: #27ae60;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.practicalImpact {
+  margin-bottom: 4rem;
+}
+
+.impactIntro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.impactGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.impactCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  border: 1px solid #e1e5e9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.impactCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.impactTitle {
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.impactCard p {
+  color: #555;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.conclusion {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.conclusionText {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.conclusionActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.interactiveButton {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.interactiveButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+.guideButton {
+  background: transparent;
+  color: #3498db;
+  padding: 1rem 2rem;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.guideButton:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}

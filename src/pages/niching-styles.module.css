@@ -1,0 +1,434 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.backLink {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: #2980b9;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin: 0;
+  font-weight: 400;
+}
+
+.introduction {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  border-left: 4px solid #3498db;
+}
+
+.introText {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.introText:last-child {
+  margin-bottom: 0;
+}
+
+.experiencesContainer {
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.experienceCard {
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #e1e5e9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.experienceCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.selectedCard {
+  border-width: 3px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.experienceIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.experienceTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experienceSubtitle {
+  font-style: italic;
+  color: #666;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.cardContent {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.experienceDescription {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.expandedContent {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e1e5e9;
+}
+
+.detailSection {
+  margin-bottom: 1.5rem;
+}
+
+.detailTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.detailList {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.detailList li {
+  margin-bottom: 0.25rem;
+  color: #555;
+}
+
+.conversationText,
+.responsibilityText {
+  color: #555;
+  margin: 0;
+  font-style: italic;
+}
+
+.cardActions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.actionHint {
+  color: #666;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.examplesButton {
+  background: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.examplesButton:hover {
+  background: #3498db;
+  color: white;
+}
+
+.diagnosticSection {
+  margin-bottom: 4rem;
+}
+
+.diagnosticIntro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.diagnosticTable {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  background: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #e1e5e9;
+}
+
+.questionColumn,
+.answerColumn {
+  padding: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.questionColumn {
+  text-align: left;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  border-bottom: 1px solid #e1e5e9;
+}
+
+.tableRow:last-child {
+  border-bottom: none;
+}
+
+.questionCell,
+.answerCell {
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+.questionCell {
+  font-weight: 500;
+  color: #2c3e50;
+  border-right: 1px solid #e1e5e9;
+}
+
+.answerCell {
+  color: #555;
+  border-right: 1px solid #e1e5e9;
+  text-align: center;
+}
+
+.answerCell:last-child {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1fr;
+  }
+  
+  .questionColumn,
+  .answerColumn,
+  .questionCell,
+  .answerCell {
+    text-align: left;
+    border-right: none;
+    border-bottom: 1px solid #e1e5e9;
+  }
+  
+  .answerColumn {
+    font-weight: 600;
+    background: #f8f9fa;
+  }
+}
+
+.responsibilitySpectrum {
+  margin-bottom: 4rem;
+}
+
+.spectrumIntro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.spectrumContainer {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.spectrumLine {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to right, #3498db, #e67e22, #9b59b6);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.spectrumPoint {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.spectrumPoint:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.spectrumDot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin: 0 1rem;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.spectrumLabel {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  border: 1px solid #e1e5e9;
+}
+
+.spectrumLabel h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.spectrumDescription {
+  margin: 0;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .spectrumPoint {
+    flex-direction: column !important;
+    text-align: center;
+  }
+  
+  .spectrumDot {
+    margin: 0 0 1rem 0;
+  }
+  
+  .spectrumLine {
+    display: none;
+  }
+}
+
+.integrationNote {
+  background: #fff3cd;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid #f39c12;
+  margin-bottom: 3rem;
+}
+
+.noteText {
+  color: #856404;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.nextSteps {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  padding: 2.5rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.nextStepsText {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nextStepsActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nextButton {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.nextButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+}
+
+.assessmentLink {
+  background: transparent;
+  color: #3498db;
+  padding: 1rem 2rem;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.assessmentLink:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}
